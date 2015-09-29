@@ -1,18 +1,31 @@
+Snowflake [] bobsters = new Snowflake [35];
 void setup()
 {
   //your code here
   size(300,300);
+
+  //bob.erase();
+ 
 }
 void draw()
 {
   //your code here
-  Snowflake bob = new Snowflake();
-  bob.erase();
-  bob.move();
+
+  for (int i = 0; i < bobsters.length; i++)
+  {
+   bobsters[i] = new Snowflake();
+   bobsters[i].erase();
+   bobsters[i].lookDown();
+   bobsters[i].move();
+   bobsters[i].wrap();
+   bobsters[i].show();
+  }
+ 
 }
 void mouseDragged()
 {
   //your code here
+
 }
 
 class Snowflake
@@ -30,6 +43,7 @@ class Snowflake
   void show()
   {
     //your code here
+    ellipse(x,y,5,5);
   }
   void lookDown()
   {
@@ -48,14 +62,20 @@ class Snowflake
   void move()
   {
     //your code here
-    if (isMoving == true)
+    if(isMoving = true)
     {
-       y++;
+      y++;
     }
+    
   }
   void wrap()
   {
     //your code here
+    if (y > 300)
+    {
+      y = 0;
+      x = (int)(Math.random() * 301);
+    }
   }
 }
 
