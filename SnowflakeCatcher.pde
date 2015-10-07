@@ -15,7 +15,6 @@ void setup()
 void draw()
 {
   //your code here
-  background(0);
   for (int i = 0; i < bobsters.length; i++)
   {
    bobsters[i].erase();
@@ -31,7 +30,7 @@ void mouseDragged()
   //your code here
   fill(255,0,0);
   noStroke();
-  ellipse(mouseX,mouseY,10,10);
+  ellipse(mouseX,mouseY,5,5);
 }
 
 class Snowflake
@@ -68,10 +67,10 @@ class Snowflake
     //your code here
     if (y > 0 && y < 300)
     {
-      /*if(get(x,y+3.5) != color(0))
+      if(get(x,y+4) != color(0))
       {
         isMoving = false;
-      }*/
+      }
     } 
   }
   void erase()
