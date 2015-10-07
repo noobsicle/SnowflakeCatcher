@@ -66,11 +66,11 @@ class Snowflake
   {
     //your code here
     if (y > 0 && y < 300)
-    {
-      if(get(x,y+3) != color(0))
+    {isMoving = false;
+      /*if(get(x,y+3) != color(0))
       {
-        isMoving = false;
-      }
+        
+      }*/
     } 
   }
   void erase()
