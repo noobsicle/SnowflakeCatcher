@@ -4,7 +4,7 @@ void setup()
   //your code here
   size(300,300);
   frameRate(30); 
-  
+  background(0);
   stroke(0);
   for (int i = 0; i < bobsters.length; i++)
   {
@@ -14,7 +14,7 @@ void setup()
 }
 void draw()
 {
-background(0);
+
   //your code here
   for (int i = 0; i < bobsters.length; i++)
   {
