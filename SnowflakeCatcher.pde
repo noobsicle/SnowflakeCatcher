@@ -29,6 +29,7 @@ void mouseDragged()
 {
   //your code here
   fill(255,0,0);
+  noStroke();
   ellipse(mouseX,mouseY,10,10);
 }
 
