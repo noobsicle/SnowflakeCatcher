@@ -15,14 +15,14 @@ void setup()
 void draw()
 {
   //your code here
+  background(0);
   for (int i = 0; i < bobsters.length; i++)
   {
    bobsters[i].erase();
-   bobsters[i].show();
-   
+   bobsters[i].lookDown();
    bobsters[i].move();
    bobsters[i].wrap();
-   bobsters[i].lookDown();
+   bobsters[i].show();
   }
  
 }
