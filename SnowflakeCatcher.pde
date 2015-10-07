@@ -19,10 +19,10 @@ void draw()
   {
    bobsters[i].erase();
    bobsters[i].show();
-   bobsters[i].lookDown();
+   
    bobsters[i].move();
    bobsters[i].wrap();
-   
+   bobsters[i].lookDown();
   }
  
 }
