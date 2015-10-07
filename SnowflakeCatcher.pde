@@ -1,4 +1,5 @@
-Snowflake [] bobsters = new Snowflake [30];
+
+Snowflake [] bobsters = new Snowflake [60];
 void setup()
 {
   //your code here
@@ -8,7 +9,8 @@ void setup()
   stroke(0);
   for (int i = 0; i < bobsters.length; i++)
   {
-   bobsters[i] = new Snowflake();
+    
+    bobsters[i] = new Snowflake();
   }
  
 }
@@ -29,6 +31,7 @@ void mouseDragged()
 {
   //your code here
   fill(255,0,0);
+  noStroke();
   ellipse(mouseX,mouseY,10,10);
 }
 
@@ -66,7 +69,7 @@ class Snowflake
     //your code here
     if (y > 0 && y < 300)
     {
-      if(get(x,y+3) != color(0))
+      if(get(x,y+3) == color(255,0,0))
       {
         isMoving = false;
       }
