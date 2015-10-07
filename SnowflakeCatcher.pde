@@ -18,10 +18,11 @@ void draw()
   for (int i = 0; i < bobsters.length; i++)
   {
    bobsters[i].erase();
+   bobsters[i].show();
    bobsters[i].lookDown();
    bobsters[i].move();
    bobsters[i].wrap();
-   bobsters[i].show();
+   
   }
  
 }
@@ -67,7 +68,7 @@ class Snowflake
     //your code here
     if (y > 0 && y < 300)
     {
-      /*if(get(x,y+3) != color(0))
+      /*if(get(x,y+3.5) != color(0))
       {
         isMoving = false;
       }*/
