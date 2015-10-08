@@ -1,9 +1,8 @@
-<<<<<<< HEAD
+
 
 Snowflake [] bobsters = new Snowflake [90];
-=======
-Snowflake [] bobsters = new Snowflake [60];
->>>>>>> 6bb1dd1263496481cc5805853f3e1b2a5e85f94f
+
+
 void setup()
 {
   //your code here
@@ -37,11 +36,8 @@ void mouseDragged()
   //your code here
   fill(255,0,0);
   noStroke();
-<<<<<<< HEAD
   ellipse(mouseX,mouseY,10,10);
-=======
-  ellipse(mouseX,mouseY,5,5);
->>>>>>> 6bb1dd1263496481cc5805853f3e1b2a5e85f94f
+
 }
 
 class Snowflake
@@ -76,17 +72,14 @@ class Snowflake
   void lookDown()
   {
     //your code here
-    /*if (y > 0 && y < 300)
+    if (y > 0 && y < 300)
     {
-<<<<<<< HEAD
-      if(get(x,y+3) == color(255,0,0))
-=======
+
       if(get(x,y+4) == color(255,0,0))
->>>>>>> 6bb1dd1263496481cc5805853f3e1b2a5e85f94f
       {
         isMoving = false;
       }
-    }*/ 
+    }
   }
   void erase()
   {
