@@ -43,7 +43,7 @@ void mouseDragged()
 class Snowflake
 {
   //class member variable declarations
-  int x, y, move;
+  int x, y, moverino;
   boolean isMoving;
   Snowflake()
   {
@@ -51,7 +51,7 @@ class Snowflake
     x = (int)(Math.random() * 301);
     y = (int)(Math.random() * 301);
     isMoving = true;
-    move = (int)(Math.random()*5) + 2 ;
+    moverino = (int)(Math.random()*5) + 2 ;
   }
   void show()
   {
@@ -64,7 +64,7 @@ class Snowflake
     //your code here
     if(isMoving == true)
     {
-      y+= move;
+      y+= moverino;
     }
     
   }
@@ -96,7 +96,7 @@ class Snowflake
     {
       y = 0;
       x = (int)(Math.random() * 301);
-      move = (int)(Math.random()*5) + 2 ;
+      moverino = (int)(Math.random()*5) + 2 ;
     }
 
   }
