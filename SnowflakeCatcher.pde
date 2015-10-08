@@ -18,7 +18,7 @@ void draw()
   //your code here
   for (int i = 0; i < bobsters.length; i++)
   {
-   //bobsters[i].erase();
+   bobsters[i].erase();
    bobsters[i].lookDown();
    bobsters[i].move();
    bobsters[i].wrap();
