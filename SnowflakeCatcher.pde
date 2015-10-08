@@ -1,4 +1,4 @@
-Snowflake [] bobsters = new Snowflake [30];
+Snowflake [] bobsters = new Snowflake [60];
 void setup()
 {
   //your code here
@@ -68,7 +68,7 @@ class Snowflake
     //your code here
     if (y > 0 && y < 300)
     {
-      if(get(x,y+4) == color(0))
+      if(get(x,y+4) == color(255,0,0))
       {
         isMoving = false;
       }
