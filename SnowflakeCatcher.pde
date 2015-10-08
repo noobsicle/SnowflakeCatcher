@@ -1,10 +1,10 @@
 
-Snowflake [] bobsters = new Snowflake [60];
+Snowflake [] bobsters = new Snowflake [90];
 void setup()
 {
   //your code here
   size(300,300);
-  frameRate(30); 
+  frameRate(40); 
   background(0);
   stroke(0);
   for (int i = 0; i < bobsters.length; i++)
